@@ -11,6 +11,7 @@ library(shiny)
 library(flexdashboard)
 library(shinyscreenshot)
 
+# install.packages(c("shinyscreenshot"))
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {

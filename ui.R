@@ -15,6 +15,8 @@ library(plotly)
 library(shinydashboardPlus)
 library(DT)
 
+#install.packages(c("shinythemes","shinydashboard","flexdashboard","plotly","shinydashboardPlus","DT"))
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
   tags$head(
@@ -26,7 +28,7 @@ ui <- fluidPage(
              theme = shinytheme("flatly"),
              tags$head(tags$style(HTML('.navbar-static-top {background-color: #325fab;}',
                                        '.navbar-default .navbar-nav>.active>a {background-color: #325fab;}'))),
-                  tabPanel("Costs",
+                  tabPanel("External Factors",
                             sidebarLayout(
                               sidebarPanel(
                                tags$style(".well {background-color: #325fab; color: #f4f4f4;}"),
